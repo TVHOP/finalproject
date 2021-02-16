@@ -7,7 +7,7 @@
     <!-- Linking to the main p5.js library, which allows your code to use all of the p5 functions that we have learned. Using this version while developing your code allows p5 to provide more Friendly Error Messages when you mess something up...-->
     <script src="js/p5.js"></script>
 
-    <!-- Once your project is working completely, you can comment out the link to p5.js above, and instead link to this minified version. The minified version takes less space, and turns off Friendly Error Messages. This increases the speed of your program quite dramatically in some cases. -->
+    <!-- Once your project is working completely, you can comment out the link to p5.js above, and instead link to this minified version. The minified version takes less space, and turns off Friendly Error Messages. This increases the velo of your program quite dramatically in some cases. -->
     <!-- <script src="js/p5.min.js"></script> -->
     
     <!-- If you are going to use sound in your project, uncomment the line below this... -->
@@ -23,3 +23,49 @@
   <body>
   </body>
 </html>
+
+< <header class="wrap">
+  <h1>serpent</h1>
+  <p class="points">points: <span id="points_value">0</span></p>
+</header>
+<canvas class="wrap" id="serpent" width="320" height="320" tabindex="1"></canvas>
+
+<!-- Game Over Screen -->
+<div id="gameover">
+  <h2>Game Over</h2>
+  <p>press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin a</p>
+  <a id="newgame_gameover">new game</a>
+  <a id="setting_gameover">settings</a>
+</div>
+
+<!-- Setting screen -->
+<div id="setting">
+  <h2>Settings</h2>
+  
+  <a id="newgame_setting">new game</a>
+  
+  <p>speed:
+      <input id="velo1" type="radio" name="velo" value="120" checked/>
+      <label for="velo1">Slow</label>
+      <input id="velo2" type="radio" name="velo" value="75"/>
+      <label for="velo2">Normal</label>
+      <input id="velo3" type="radio" name="velo" value="35"/>
+      <label for="velo3">Fast</label>
+  </p>
+  
+  <p>Wall:
+      <input id="wallon" type="radio" name="wall" value="1" checked/>
+      <label for="wallon">On</label>
+      <input id="walloff" type="radio" name="wall" value="0"/>
+      <label for="walloff">Off</label>
+  </p>
+
+</div>
+
+<!-- Main Menu Screen -->
+<div id="menu">
+  <h2>serpent</h2>
+
+  <a id="newgame_menu">new game</a>
+  <a id="setting_menu">settings</a>
+</div>
